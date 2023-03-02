@@ -1,0 +1,12 @@
+[github]
+	user = nikolaev-i
+	token = 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
+[user]
+	email = eng.ivan.nikolaev@gmail.com
+	name = Ivan
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
