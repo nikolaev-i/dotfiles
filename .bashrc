@@ -8,7 +8,8 @@ case $- in
     *i*) ;;
       *) return;;
   esac
-
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export PATH="$PATH:/opt/nvim-linux-86_64/bin/nvim"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/usr/local/bin"
@@ -26,6 +27,7 @@ HISTFILESIZE=10000
 #set nvim as the default man reader
 alias vim='nvim'
 export MANPAGER='nvim +Man!'
+export EDITOR='nvim'
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -123,3 +125,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+complete -C /usr/bin/terraform terraform
