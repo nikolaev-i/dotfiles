@@ -123,3 +123,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+. "$HOME/.local/bin/env"
+
+complete -C /usr/bin/terraform terraform
