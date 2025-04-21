@@ -33,6 +33,17 @@ export EDITOR='nvim'
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+
+#------XDG-config---------------
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="/temp/$USER/.cache"
+export XDG_STATE_HOME="$HOME/.local/state"
+
+
+#--------------------------
+
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
 #shopt -s globstar
